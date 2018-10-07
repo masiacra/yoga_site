@@ -291,6 +291,31 @@ td {
 	display: none;
   }
   
+  .main input[type="text"], textarea {
+	font-size: 0.9rem;
+	border-radius: 5px;
+  }
+
+  .main input[type="submit"] {
+	padding: 10px 25px;
+	font-size: 0.9rem;
+	border-radius: 5px;
+	box-shadow: 0 0 4px white;
+  }
+  .main .label {
+	display: inline-block;
+	width: 15%;
+	font-size: 0.9rem;
+	vertical-align: top;
+	text-align: right;
+	margin-right: 15px;
+  }
+  
+  .contacts .main {
+	font-size: 0.9rem;
+  }
+  
+  
 	.sidebar {
 		display: none;
 	}
@@ -336,6 +361,35 @@ td {
   .main iframe {
 	display: none;
   }
+  
+  .main input[type="text"], textarea {
+	font-size: 0.8rem;
+	border-radius: 5px;
+  }
+  
+  textarea {
+	max-width: 60%;
+  }
+
+  .main input[type="submit"] {
+	padding: 10px 25px;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	box-shadow: 0 0 4px white;
+  }
+  .main .label {
+	display: inline-block;
+	width: 15%;
+	font-size: 0.9rem;
+	vertical-align: top;
+	text-align: right;
+	margin-right: 40px;
+  }
+  
+  .contacts .main {
+	font-size: 0.9rem;
+  }
+  
 	
 	.teachers .main, .news .main {
 		font-size: 0.8rem;
