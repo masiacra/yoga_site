@@ -61,6 +61,50 @@ body {
 	line-height: 1.4em;
 }
 
+.teachers .main, .news .main {
+	font-size: 1.3rem;
+}
+
+.news .main {
+	float: none;
+	width: 100%;
+}
+
+
+.main figcaption {
+	font-weight: bold;
+	text-align: center;
+}
+
+.main img {
+	float: left;
+	margin-right: 20px;
+	max-width: 50%;
+}
+
+.main div {
+	clear: both;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed rgb(104,89,165);
+	padding-bottom: 40px;
+}
+
+.main div:last-of-type {
+	border: none;
+}
+
+.main div:nth-of-type(5) {
+	padding-bottom: 120px;
+}
+
+.main time {
+	font-style: italic;
+	margin-left: 20%;
+	font-size: 1rem;
+}
+
+
+
 .sidebar {
 	float: right;
 	width: 25%;
@@ -147,7 +191,7 @@ nav ul a:last-of-type {
 }
 
 .home .homeLink, .about .aboutLink, .shedule .sheduleLink,
-.teacher .teachersLink, .news .newsLink, .contacts .contactsLink {
+.teachers .teachersLink, .news .newsLink, .contacts .contactsLink {
 	background-color: rgb(104,89,165);
 	color: yellow;
 }
@@ -252,7 +296,10 @@ td {
 		margin: 10 auto;
 		line-height: 1.2rem;
 		font-size: 1.1rem;
-
+	}
+	
+	.teachers .main, .news .main {
+		font-size: 0.8rem;
 	}
 	
 	.logo {
@@ -268,7 +315,7 @@ td {
 	}
 	
 	nav ul a{
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	
 	}
 	
@@ -277,8 +324,8 @@ td {
 	}
   	table {
 		font-size: 0.4rem;
-
 	}
+	
 	
 
 }
