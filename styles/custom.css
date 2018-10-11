@@ -109,6 +109,40 @@ body {
 	margin: 0;
 }
 
+.main h1 {
+	font-weight: normal;
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	color: rgb(255, 114, 0);
+}
+
+.main figcaption {
+	margin-bottom: 20px;
+}
+
+.main .label {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	text-align: right;
+	margin-right: 15px;
+}
+
+.main input[type="text"], textarea {
+	font-size: 1.2rem;
+	border-radius: 5px;
+}
+
+.main input[type="submit"] {
+	padding: 10px 25px;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	box-shadow: 0 0 4px white;
+}
+
+
 
 
 .sidebar {
@@ -120,6 +154,9 @@ body {
 	font-size: 1rem;
 	padding-top: 15px;
 	line-height: 1.4em;
+	margin-top: 25px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 }
 
 .sidebar figcaption {
@@ -127,6 +164,10 @@ body {
 	padding-bottom: 10px;
 }
 
+
+.sidebar h2 {
+	margin-bottom: 15px;
+}
 
 footer {
 	clear: both;
@@ -214,9 +255,7 @@ table {
 	color: rgb(101,72,71);
 }
 
-caption {
-	font-size: 1.2em;
-}
+
 
 th, td {
 	border: 1px solid black;
@@ -243,25 +282,7 @@ td {
 }
 
 
-.main .label {
-	display: inline-block;
-	width: 20%;
-	vertical-align: top;
-	text-align: right;
-	margin-right: 15px;
-}
 
-.main input[type="text"], textarea {
-	font-size: 1.2rem;
-	border-radius: 5px;
-}
-
-.main input[type="submit"] {
-	padding: 10px 25px;
-	font-size: 1.2rem;
-	border-radius: 5px;
-	box-shadow: 0 0 4px white;
-}
 
 
 
