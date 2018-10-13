@@ -51,19 +51,19 @@ body {
   max-width: 900px;
   width: auto;
   margin: 0 auto;
+  
 }
 
 .main {
 	float: left;
 	width: 70%; 
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	margin-top: 15px;
 	line-height: 1.4em;
+	margin-bottom: 20px;
 }
 
-.teachers .main, .news .main {
-	font-size: 1.3rem;
-}
+
 
 .news .main {
 	float: none;
@@ -74,12 +74,15 @@ body {
 .main figcaption {
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .main img {
 	float: left;
 	margin-right: 20px;
 	max-width: 50%;
+	margin-bottom: 10px;
+	margin-top: 5px;
 }
 
 .main div {
@@ -117,10 +120,11 @@ body {
 	margin-top: 15px;
 	color: rgb(255, 114, 0);
 }
-
-.main figcaption {
-	margin-bottom: 20px;
+.main .especial {
+	color: rgb(255, 114, 0);
 }
+
+
 
 .main .label {
 	display: inline-block;
@@ -130,9 +134,14 @@ body {
 	margin-right: 15px;
 }
 
-.main input[type="text"], textarea {
+.main input[type="text"], .main textarea {
+	background-color: rgb(122,184,205);
 	font-size: 1.2rem;
 	border-radius: 5px;
+}
+
+.main input[type="text"]:focus, .main textarea:focus {
+	background-color: rgb(241,235,157)
 }
 
 .main input[type="submit"] {
@@ -140,6 +149,13 @@ body {
 	font-size: 1.2rem;
 	border-radius: 5px;
 	box-shadow: 0 0 4px white;
+}
+
+.main table {
+	font-size: 0.8rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: rgb(101,72,71);
 }
 
 
@@ -156,7 +172,7 @@ body {
 	line-height: 1.4em;
 	margin-top: 25px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+	margin-bottom: 20px;
 }
 
 .sidebar figcaption {
@@ -217,7 +233,7 @@ nav ul {
 
 nav li {
 	float: left;
-	width: 14em;
+	width: 12em;
 }
 
 
@@ -238,7 +254,8 @@ nav ul a:last-of-type {
 }
 
 .home .homeLink, .about .aboutLink, .shedule .sheduleLink,
-.teachers .teachersLink, .news .newsLink, .contacts .contactsLink {
+.teachers .teachersLink, .news .newsLink, .contacts .contactsLink,
+.classes .classesLink {
 	background-color: rgb(104,89,165);
 	color: yellow;
 }
@@ -248,12 +265,7 @@ nav a:hover {
 	color: rgb(182,208,207);
 }
 
-table {
-	font-size: 0.8rem;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: rgb(101,72,71);
-}
+
 
 
 
@@ -306,15 +318,21 @@ td {
 	float: none;
 	line-height: 1.2em;
 	margin: 2% auto;
+	
   }
   
   .main iframe {
 	display: none;
   }
   
-  .main input[type="text"], textarea {
-	font-size: 0.9rem;
+  .main input[type="text"], .main textarea {
+	font-size: 1rem;
 	border-radius: 5px;
+	margin-bottom: 10px;
+  }
+  
+  .main textarea {
+	width: 70%;
   }
 
   .main input[type="submit"] {
@@ -326,10 +344,16 @@ td {
   .main .label {
 	display: inline-block;
 	width: 15%;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	vertical-align: top;
 	text-align: right;
 	margin-right: 15px;
+  }
+  
+  .main table {
+	font-size: 1rem;	
+	display: block;
+	overflow-x: auto;
   }
   
   .contacts .main {
@@ -345,10 +369,7 @@ td {
 		margin-top: 50%;
 	}
 	
-	table {
-		font-size: 0.6rem;
-	
-	}
+
 	
 	#time {
 		width: auto;
@@ -386,9 +407,10 @@ td {
   .main input[type="text"], textarea {
 	font-size: 0.8rem;
 	border-radius: 5px;
+	margin-bottom: 10px;
   }
   
-  textarea {
+  .main textarea {
 	max-width: 60%;
   }
 
@@ -397,15 +419,27 @@ td {
 	font-size: 0.8rem;
 	border-radius: 5px;
 	box-shadow: 0 0 4px white;
+	
   }
   .main .label {
 	display: inline-block;
 	width: 15%;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	vertical-align: top;
 	text-align: right;
 	margin-right: 40px;
   }
+  
+  .main h1 {
+	font-size: 1.2rem;
+  }
+  
+    .main table {
+		font-size: 0.8rem;
+		overflow-x: auto;
+		display: block;
+	}
+  
   
   .contacts .main {
 	font-size: 0.9rem;
@@ -436,11 +470,9 @@ td {
 	nav li {
 		width: 10em;
 	}
-  	table {
-		font-size: 0.4rem;
-	}
+
 	
-	
+
 
 }
 
