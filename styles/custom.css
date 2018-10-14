@@ -57,7 +57,7 @@ body {
 .main {
 	float: left;
 	width: 70%; 
-	font-size: 1.3rem;
+	font-size: 1.3em;
 	margin-top: 15px;
 	line-height: 1.4em;
 	margin-bottom: 20px;
@@ -71,12 +71,6 @@ body {
 }
 
 
-.main figcaption {
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
 .main img {
 	float: left;
 	margin-right: 20px;
@@ -89,7 +83,7 @@ body {
 	clear: both;
 	margin-bottom: 10px;
 	border-bottom: 1px dashed rgb(104,89,165);
-	padding-bottom: 40px;
+	padding-bottom: 70px;
 }
 
 .main div:last-of-type {
@@ -100,10 +94,11 @@ body {
 	padding-bottom: 120px;
 }
 
-.main time {
+.main .time {
+	text-align: center;
 	font-style: italic;
 	margin-left: 20%;
-	font-size: 1rem;
+	font-size: 0.8em;
 }
 
 .main ul {
@@ -114,7 +109,7 @@ body {
 
 .main h1 {
 	font-weight: normal;
-	font-size: 1.6rem;
+	font-size: 1.6em;
 	text-align: center;
 	margin-bottom: 15px;
 	margin-top: 15px;
@@ -122,6 +117,10 @@ body {
 }
 .main .especial {
 	color: rgb(255, 114, 0);
+}
+
+.news .main .especial {
+	text-align: center;
 }
 
 
@@ -136,7 +135,7 @@ body {
 
 .main input[type="text"], .main textarea {
 	background-color: rgb(122,184,205);
-	font-size: 1.2rem;
+	font-size: 1.1em;
 	border-radius: 5px;
 }
 
@@ -146,17 +145,54 @@ body {
 
 .main input[type="submit"] {
 	padding: 10px 25px;
-	font-size: 1.2rem;
+	font-size: 1em;
 	border-radius: 5px;
 	box-shadow: 0 0 4px white;
 }
 
 .main table {
-	font-size: 0.8rem;
+	font-size: 0.7em;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: rgb(101,72,71);
 }
+
+.main th, td {
+	border: 1px solid black;
+	padding: 3px 7px 2px 7px;
+
+}
+
+.main th {
+	text-transform: uppercase;
+	background-color: rgb(190,204,163);
+	
+}
+
+.main .subtitle {
+	background-color: rgb(230,152,126);
+}
+
+.main tr {
+	background-color: rgb(242,211,170);
+}
+
+.main #time {
+	width: 15%;
+}
+
+
+.main a {
+	color: #2933FF;
+	text-decoration: none;
+	border-bottom: 2px dashed #2933FF;;
+}
+
+.main a:hover {
+	background-color: lightyellow;
+}
+
+
 
 
 
@@ -167,7 +203,7 @@ body {
 	border-left: 1px dashed #999;
 	text-align: center;
 	background-color: white;
-	font-size: 1rem;
+	font-size: 1.1em;
 	padding-top: 15px;
 	line-height: 1.4em;
 	margin-top: 25px;
@@ -175,7 +211,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.sidebar figcaption {
+.sidebar p {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -185,13 +221,22 @@ body {
 	margin-bottom: 15px;
 }
 
-footer {
+.sidebar a {
+	color: rgb(226,179,197);
+}
+
+.sidebar a:hover {
+	color: lightgreen;
+
+}
+
+.footer {
 	clear: both;
 	text-align: center;
 	border-top: 1px solid black;
 	background-color: rgb(226,179,197);
 	background-image: linear-gradient(to right, rgb(250,218,221),rgb(226,179,197));
-	font-size: 0.8rem;
+	font-size: 0.8em;
 }
 
 .logo {
@@ -200,7 +245,7 @@ footer {
 }
 .logo span {
 	font-family: "Copperplate Light", "Copperplate Gothic Light", serif;
-	font-size: 5rem;
+	font-size: 5em;
 	font-style: italic;
 	text-shadow: 4px 4px 3px #999;
 	float: right;
@@ -223,7 +268,7 @@ footer {
 	text-align: center;
 }
 
-nav ul {
+.navigation ul {
 	list-style-type: none;
 	margin-left: 0;
 	padding-left: 0;
@@ -231,17 +276,17 @@ nav ul {
 }
 
 
-nav li {
+.navigation li {
 	float: left;
 	width: 12em;
 }
 
 
 
-nav ul a {
+.navigation ul a {
 	text-decoration: none;
 	display: block;
-	font-size: 1.1rem;
+	font-size: 1.1em;
 	border: 1px dashed #999;
 	padding: 7px 5px;
 	border-right: none;
@@ -249,7 +294,7 @@ nav ul a {
 	color: rgb(241,235,157);
 }
 
-nav ul a:last-of-type {
+.navigation ul a:last-of-type {
 	border-right: 1px dashed #999;
 }
 
@@ -260,7 +305,7 @@ nav ul a:last-of-type {
 	color: yellow;
 }
 
-nav a:hover {
+.navigation a:hover {
 	background-color: rgb(241,235,157);
 	color: rgb(182,208,207);
 }
@@ -269,29 +314,6 @@ nav a:hover {
 
 
 
-th, td {
-	border: 1px solid black;
-	padding: 3px 7px 2px 7px;
-
-}
-
-th {
-	text-transform: uppercase;
-	background-color: rgba(190,204,163, 0.5);
-	
-}
-
-td {
-	background-color: rgba(242,211,170, 0.5);
-}
-
-#time {
-	width: 15%;
-}
-
-.subtitle {
-	background-color: rgba(230,152,126, .5);
-}
 
 
 
@@ -304,7 +326,7 @@ td {
     /* только для планшетов */
   }
   .logo span{
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	top: 30%;
 	right: 5%;
   }
@@ -326,7 +348,7 @@ td {
   }
   
   .main input[type="text"], .main textarea {
-	font-size: 1rem;
+	font-size: 1em;
 	border-radius: 5px;
 	margin-bottom: 10px;
   }
@@ -337,17 +359,17 @@ td {
 
   .main input[type="submit"] {
 	padding: 10px 25px;
-	font-size: 0.9rem;
+	font-size: 0.9em;
 	border-radius: 5px;
 	box-shadow: 0 0 4px white;
   }
   .main .label {
 	display: inline-block;
 	width: 15%;
-	font-size: 1rem;
+	font-size: 1em;
 	vertical-align: top;
 	text-align: right;
-	margin-right: 15px;
+	margin-right: 25px;
   }
   
   .main table {
@@ -356,8 +378,16 @@ td {
 	overflow-x: auto;
   }
   
+  	.main #time {
+		width: auto;
+	}
+  
   .contacts .main {
-	font-size: 0.9rem;
+	font-size: 0.9em;
+  }
+  
+  .main h1 {
+	font-size: 1.2em;
   }
   
   
@@ -365,18 +395,12 @@ td {
 		display: none;
 	}
 	
-	footer {
+	.footer {
 		margin-top: 50%;
 	}
 	
-
-	
-	#time {
-		width: auto;
-	}
-	
-	nav ul a {
-		font-size: 0.9rem;
+	.navigation ul a {
+		font-size: 0.9em;
 	}
 	
 
@@ -395,9 +419,9 @@ td {
 	.main {
 		width: 100%;
 		float: none;
-		margin: 10 auto;
-		line-height: 1.2rem;
-		font-size: 1.1rem;
+		margin: 0 auto;
+		line-height: 1.2em;
+		font-size: 1.1em;
 	}
 	
   .main iframe {
@@ -405,7 +429,7 @@ td {
   }
   
   .main input[type="text"], textarea {
-	font-size: 0.8rem;
+	font-size: 0.8em;
 	border-radius: 5px;
 	margin-bottom: 10px;
   }
@@ -416,7 +440,7 @@ td {
 
   .main input[type="submit"] {
 	padding: 10px 25px;
-	font-size: 0.8rem;
+	font-size: 0.8em;
 	border-radius: 5px;
 	box-shadow: 0 0 4px white;
 	
@@ -424,30 +448,30 @@ td {
   .main .label {
 	display: inline-block;
 	width: 15%;
-	font-size: 0.8rem;
+	font-size: 0.8em;
 	vertical-align: top;
 	text-align: right;
 	margin-right: 40px;
   }
   
   .main h1 {
-	font-size: 1.2rem;
+	font-size: 1.2em;
   }
   
     .main table {
-		font-size: 0.8rem;
+		font-size: 0.8em;
 		overflow-x: auto;
 		display: block;
 	}
   
   
   .contacts .main {
-	font-size: 0.9rem;
+	font-size: 1em;
   }
   
 	
 	.teachers .main, .news .main {
-		font-size: 0.8rem;
+		font-size: 1em;
 	}
 	
 	.logo {
@@ -459,15 +483,15 @@ td {
 	
 	.logo span {
 		position: absolute;
-		font-size: 1.7rem;
+		font-size: 1.7em;
 	}
 	
-	nav ul a{
-		font-size: 0.9rem;
+	.navigation ul a{
+		font-size: 0.9em;
 	
 	}
 	
-	nav li {
+	.navigation li {
 		width: 10em;
 	}
 
